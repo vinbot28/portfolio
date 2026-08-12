@@ -1,17 +1,13 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
+
 title: 'First ever update!'
 pubDate: 2026-08-08
 description: 'The beginning of many devlogs.'
 author: 'Vincent'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
 ---
-# First Post
 
-Published on: 2026-08-08
-
+---------------
 Hello internet. 
 
 ## What I've accomplished
