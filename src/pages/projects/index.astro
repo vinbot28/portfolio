@@ -1,13 +1,25 @@
 ---
 import BaseLayoutAstroComponent from "../../layouts/BaseLayout.astro";
-const pageTitle = "Projects";
+import Card from "../../components/Card.astro";
+const pageTitle = "All Projects";
 
 ---
 
 <BaseLayoutAstroComponent pageTitle={pageTitle}>
 	<h1>{pageTitle}</h1>
-	<h2>pretend there's a wall of projects</h2>
+	
+	<p>need to figure out how to do filtering tags</p>
 
-	<p>will have tags to filter</p>
-	<p> and cover images 👀</p>
+
+	<div class="flex-container">
+		<Card name={"Project 1"} date={"Fall 2026"}></Card> 
+		<Card name={"Project 2"} date={"Spring 2026"}></Card>
+		<Card name={"Project 3"} date={"Spring 2026"}></Card>
+	</div>
+	<div class="flex-container">
+		<Card name={"Project 4"} date={"Fall 2026"}></Card> 
+		<Card name={"Project 5"} date={"Spring 2026"}></Card>
+		<Card name={"Project 6"} date={"Spring 2026"}></Card>
+	</div>
+
 </BaseLayoutAstroComponent>

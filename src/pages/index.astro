@@ -1,9 +1,25 @@
 ---
 import BaseLayoutAstroComponent from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
 const pageTitle = "Home Page";
 ---
 
 <BaseLayoutAstroComponent pageTitle={pageTitle}>
 	<h1>hi guys</h1>
-	<h2>Portfolio subtitle!</h2>
+	<h2>⚠️under construction⚠️</h2>
+
+	<h2 id="featuredProjects">Featured Projects</h2>
+	<button class="button" id="allProjectsButton" type="button" onclick="document.location='/projects'">see all</button>
+
+	<div class="flex-container">
+		<Card name={"Project 1"} date={"Fall 2026"}></Card> 
+		<Card name={"Project 2"} date={"Spring 2026"}></Card>
+		<Card name={"Project 3"} date={"Spring 2026"}></Card>
+	</div>
+	<!-- <div class="flex-container">
+		<Card name={"Project 4"} date={"Fall 2026"}></Card> 
+		<Card name={"Project 5"} date={"Spring 2026"}></Card>
+		<Card name={"Project 6"} date={"Spring 2026"}></Card>
+	</div> -->
+	
 </BaseLayoutAstroComponent>
